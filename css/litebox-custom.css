@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Custom litebox styles - demo purposes only.
+   ========================================================================== */
+body {
+    background-color: #ccc;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width:900px;
+    background-color: white;
+    padding:5%;
+    border-radius:0 0 5px 5px;
+    box-shadow:0 0 5px #ccc;
+    -moz-box-shadow:0 0 5px #ccc;
+    -webkit-box-shadow:0 0 5px #ccc;
+    border:1px solid #ccc;
+}
+
+.litebox {
+    list-style: none;
+    background-color: #ccc;
+    padding:2%;
+    border-radius: 5px;
+}
+
+.litebox li {
+    border-top: 1px solid #fff;
+}
+
+.litebox li:first-child {
+    border-top: none;
+}
+
+.litebox li a {
+    transition: all 0.5s ease;
+    padding:10px;
+    text-decoration: none;
+    color:#333;
+    display: block;
+}
+
+.litebox li:hover a {
+    padding-left: 20px;
+    background-color: white;
+}
+
+/* ==========================================================================
+   ***REQUIRED*** litebox styles.
+   ========================================================================== */
+
+
+
