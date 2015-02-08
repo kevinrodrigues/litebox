@@ -48,5 +48,22 @@ body {
    ***REQUIRED*** litebox styles.
    ========================================================================== */
 
+[data-overlay="litebox"] {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    background-color: rgba(0,0,0, 0.8);
+    text-align: center;
+}
+
+[data-overlay="litebox"] img {
+    box-shadow: 0 0 25px #333;
+    -webkit-box-shadow: 0 0 25px #333;
+    -moz-box-shadow: 0 0 25px #333;
+    max-width: 900px;
+}
 
 
