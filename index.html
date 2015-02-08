@@ -21,9 +21,9 @@
             <p>Litebox demo</p>
 
             <ul class="litebox">
-                <li><a class="test" href="img/image-1.jpg">Image one</a></li>
-                <li><a href="img/image-2.jpg">Image two</a></li>
-                <li><a href="img/image-3.jpg">Image three</a></li>
+                <li><a data-litebox="litebox" href="img/image-1.jpg">Image one</a></li>
+                <li><a data-litebox="litebox" href="img/image-2.jpg">Image two</a></li>
+                <li><a data-litebox="litebox" href="img/image-3.jpg">Image three</a></li>
             </ul>
         </div>
 
@@ -32,7 +32,7 @@
         <script src="js/jquery.litebox.1.0.js"></script>
 
         <script>
-            $('.test').litebox();
+            $('[data-litebox="litebox"]').litebox();
         </script>
     </body>
 </html>

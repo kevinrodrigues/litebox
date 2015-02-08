@@ -44,6 +44,21 @@ body {
     background-color: white;
 }
 
+[data-content="litebox"] {
+    margin: 5% auto;
+    padding:10px;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 0 25px #333;
+    -webkit-box-shadow: 0 0 25px #333;
+    -moz-box-shadow: 0 0 25px #333;
+    border-radius: 10px;
+}
+
+[data-overlay="litebox"] img {
+    width: 100%;
+}
+
 /* ==========================================================================
    ***REQUIRED*** litebox styles.
    ========================================================================== */
@@ -59,11 +74,6 @@ body {
     text-align: center;
 }
 
-[data-overlay="litebox"] img {
-    box-shadow: 0 0 25px #333;
-    -webkit-box-shadow: 0 0 25px #333;
-    -moz-box-shadow: 0 0 25px #333;
-    max-width: 900px;
-}
+
 
 

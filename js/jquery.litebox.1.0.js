@@ -38,13 +38,14 @@
 		$.extend(Litebox.prototype, {
 				init: function () {
 					//kick things off!
-					this.openLightbox();	
+					this.openLightbox();
+					this.closeLightbox();
 				},
 				openLightbox: function(image) {
 					//add event listener 'click to element' so we can trigger the lightbox.
 					this.element.addEventListener('click', function (e){
 						image = this.getAttribute('href');
-						console.log(image);
+						// console.log(image);
 						e.preventDefault();
 
 						//check if the overlay first exists. bang bang (!!) to force a boolean
@@ -54,15 +55,28 @@
 						} else {
 							var liteBox =
 								'<div data-overlay="litebox" class="liteBox">' +
-									'<div class="litebox-content">' +
+									'<div data-content="litebox">' +
 										'<img src="' + image + '"/>' +
 									'</div>' +
 								'<div/>';
 							$('body').append(liteBox);
 						}
-						console.log('lightbox opened!');
-					})
+						// console.log('lightbox opened!');
+					});
+					
+				},
+				closeLightbox: function() {
+
+					if (this.overlay) {
+						$(document).on('click', '.liteBox', function() {
+							$('.liteBox').fadeOut(defaults.speed, function() {
+								$(this).remove();
+							})
+						});
+					} else	return;
+					
 				}
+
 
 		});
 
