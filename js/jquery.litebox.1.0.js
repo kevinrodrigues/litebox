@@ -21,7 +21,8 @@
 				defaults = {
 				speed: 500,
 				animation: 'swing'
-		};
+		},
+		options = {};
 
 		// The actual plugin constructor
 		function Litebox (element, options, overlay, content) {
@@ -69,7 +70,7 @@
 
 					if (this.overlay) {
 						$(document).on('click', '.liteBox', function() {
-							$('.liteBox').fadeOut(defaults.speed, function() {
+							$('.liteBox').fadeOut(options.speed, function() {
 								$(this).remove();
 							})
 						});
